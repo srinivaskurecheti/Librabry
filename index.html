@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-KyJCGgHXK4q3GJv2uq7V0TjKuI8L7i/+skB1EwKZFC/vQZhpjzePvFzv1MCJo1nJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-JwYGbo2CT/bG6npiAQHlpdHQ6j72X6f+H5eB7JG8fuEgJ1pghy1H+zs7D0gX/Frrh7vJik2UhFq3+ms8kxWVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <div class="left-side">
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-book"></i> Courses</a></li>
+      <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Teachers</a></li>
+      <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="top-bar">
+  <div class="logo">Logo</div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <button>Search</button>
+  </div>
+  <div class="profile" id="profile-btn">
+
+    
+    <i class="fas fa-user-circle"></i>
+  </div>
+</div>
+
+<div class="quick-options">
+  <h2>Quick Options</h2>
+  <div class="bottom-line"></div>
+</div>
+
+
+<div class="quick_options">
+  <div class="category">
+    <h2>Top Categories</h2>
+    <ul>
+      <li><a href="#">Web Development</a></li>
+      <li><a href="#">Mobile Development</a></li>
+      <li><a href="#">Data Science</a></li>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Business</a></li>
+    </ul>
+  </div>
+
+  <div class="topics">
+    <h2>popular Topics</h2>
+    <ul>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">React</a></li>
+      <li><a href="#">UI/UX Design</a></li>
+      <li><a href="#">Entrepreneurship</a></li>
+    </ul>
+  </div>
+
+  <div class="tutor">
+    <h2>Become a Tutor</h2>
+    <p>Join our community of expert instructors and start teaching today!</p>
+    <a href="#" class="btn">Learn More</a>
+  </div>
+</div>
+
+
+<div class="latest-courses">
+  <h2>Latest Courses</h2>
+  <div class="course-card">
+    <div class="tutor">
+      <img src="tutor1.jpg" alt="Tutor 1">
+      <div class="tutor-info">
+        <h3>Tutor Name 1</h3>
+        <p>Course Title 1</p>
+        <a href="#" class="btn">View Course</a>
+      </div>
+    </div>
+    <div class="tutor">
+      <img src="tutor2.jpg" alt="Tutor 2">
+      <div class="tutor-info">
+        <h3>Tutor Name 2</h3>
+        <p>Course Title 2</p>
+        <a href="#" class="btn">View Course</a>
+      </div>
+    </div>
+    <div class="tutor">
+      <img src="tutor3.jpg" alt="Tutor 3">
+      <div class="tutor-info">
+        <h3>Tutor Name 3</h3>
+        <p>Course Title 3</p>
+        <a href="#" class="btn">View Course</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="profile" id="profile-btn">
+    <span>profile</span>
+    <i class="fas fa-user-circle"></i>
+  </div>
+  
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Login</h3>
+      <form action="register.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+        <button type="button" id="register-btn">Register</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="register-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Register</h3>
+      <form id="registration-form" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Register">
+      </form>
+      <div id="message"></div>
+    </div>
+  </div>
+  
+
+
+<!--
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Login</h3>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+        <button type="button" id="register-btn">Register</button>
+      </form>
+    </div>
+  </div>
+
+<div id="register-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Register</h3>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+</div> 
+
+
+
+ Registration modal
+<div id="register-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Registration</h3>
+    <form>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password"><br><br>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+</div>
+-->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="profile.js"></script>
+    <script src="ajax.js"></script>
+
+</html>
